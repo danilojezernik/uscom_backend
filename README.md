@@ -8,7 +8,7 @@ This is example application that  shows my skills as fullstack developer. Applic
 in users and users can add, delete, search and update their todos. App is made in Angular framework and Api is in FastAPI in Python.
 
 
-- [OpenApi documentation for the project](https://uscom-53c75dedd999.herokuapp.com/docs)
+- [OpenApi documentation for the project](https://uscom-backend-41170fa07922.herokuapp.com/docs)
 - [Angular hosted application: uscom.danilojezernik.com](http://uscom.danilojezernik.com/)
 
 ## 🛠 Skills
