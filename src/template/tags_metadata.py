@@ -6,5 +6,9 @@ tags_metadata = [
     {
         "name": "Comment",
         "description": "Comment handling"
+    },
+    {
+        "name": "Email",
+        "description": "Email handling"
     }
 ]
