@@ -1,4 +1,4 @@
-# USCOM assignment
+# USCOM Back-End
 
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://danilojezernik.com/)
 [![facebook](https://img.shields.io/badge/facebook-0A66C2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.linkedin.com/)
@@ -11,7 +11,7 @@ App is made in Angular framework and Api is in FastAPI in Python.
 - [OpenApi documentation for the project](https://uscom-backend-41170fa07922.herokuapp.com/docs)
 - [Angular hosted application: uscom.danilojezernik.com](http://uscom.danilojezernik.com/)
 
-## 🛠 Skills
+## 🛠 Skills for both backend and frontend
 
 Python, FastApi, Openapi, MongoDB, Angular, Angular Material...
 
