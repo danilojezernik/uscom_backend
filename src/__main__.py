@@ -8,10 +8,13 @@ from src.router import post, comment, email
 from src.template.tags_metadata import tags_metadata
 
 app = FastAPI(openapi_tags=tags_metadata)
-
+origins = [
+    "http://uscom.danilojezernik.com",
+    # Add more allowed origins if needed
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
