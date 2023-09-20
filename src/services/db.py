@@ -42,5 +42,5 @@ def seed():
 
 
 drop()
-# init_seeds()
+init_seeds()
 seed()
