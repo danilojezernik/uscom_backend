@@ -22,4 +22,4 @@ app.include_router(comment.router, prefix="/comment", tags=['Comment'])
 app.include_router(email.router, prefix="/email", tags=['Email'])
 
 if __name__ == '__main__':
-    uvicorn.run(app, host="0.0.0.0", port=env.PORT)
+    uvicorn.run(app, host="0.0.0.0", port=env.PORT, timeout_keep_alive=60)
