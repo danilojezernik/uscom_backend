@@ -340,7 +340,7 @@ def html(name: str, surname: str, content: str, email: str) -> str:
             <html>
               {head}
               <body>
-                <span class="preheader">You need to confirm to login to USCOM.</span>
+                <span class="preheader">You got an email from someone on USCOM frontend.</span>
                 <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
                   <tr>
                     <td>&nbsp;</td>
