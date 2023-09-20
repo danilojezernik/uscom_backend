@@ -2,11 +2,28 @@ from fastapi import APIRouter, HTTPException, BackgroundTasks
 from src.domain.mail import Email
 from src.services import emails, db
 from src.template import email
+import asyncio
 
 router = APIRouter()
 
 
+# This timeout decorator allows setting a timeout for the request processing
+def timeout(seconds: int):
+    def decorator(func):
+        async def wrapper(*args, **kwargs):
+            try:
+                result = await asyncio.wait_for(func(*args, **kwargs), timeout=seconds)
+                return result
+            except asyncio.TimeoutError:
+                raise HTTPException(status_code=504, detail="Request processing timed out")
+
+        return wrapper
+
+    return decorator
+
+
 @router.post("/send-email")
+@timeout(30)  # Set the timeout for request processing (e.g., 30 seconds)
 async def send_email(emailing: Email, background_tasks: BackgroundTasks):
     # Check for white spaces in name and surname
     if ' ' in emailing.name or len(emailing.name) < 3:
