@@ -41,6 +41,6 @@ def seed():
     api.mail.insert_many(email_seeds)
 
 
-# init_seeds()
+init_seeds()
 drop()
 seed()
