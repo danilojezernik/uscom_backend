@@ -21,7 +21,7 @@ def send(email_to: str, subject: str, body: str) -> bool:
 
     context = ssl.create_default_context()
 
-    with smtplib.SMTP_SSL('danilojezernik.com', 465, context=context) as smtp:
+    with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
 
         smtp.login(env.EMAIL_SENDER, env.EMAIL_PASSWORD)
         sendemail = smtp.sendmail(env.EMAIL_SENDER, email_to, em.as_string())
