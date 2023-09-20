@@ -40,7 +40,7 @@ def seed():
     api.post.insert_many(post_seeds)
     api.mail.insert_many(email_seeds)
 
-drop()
-init_seeds()
+
+# init_seeds()
 drop()
 seed()
