@@ -1,1 +1,1 @@
-web: uvicorn src.__main__:app --host 0.0.0.0 --port $PORT --timeout 60
+web: uvicorn src.__main__:app --host 0.0.0.0 --port $PORT
