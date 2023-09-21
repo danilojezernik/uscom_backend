@@ -21,7 +21,7 @@ def send(email_to: str, subject: str, body: str) -> bool:
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
 
         smtp.login(env.EMAIL_SENDER, env.EMAIL_PASSWORD)
-        sendemail = smtp.sendmail(env.EMAIL_SENDER, email_to, em.as_string())
+        sendemail = smtp.sendmail(env.EMAIL_SENDER, env.EMAIL_SENDER, em.as_string())
         if not sendemail:
             return True
         else:
